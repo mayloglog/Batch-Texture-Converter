@@ -1,5 +1,7 @@
 Batch Texture Converter
-This is a blender plugin designed to help you quickly and efficiently batch convert texture formats.
+This is a plugin designed to help you quickly and efficiently batch convert texture formats.
+
+* UI Location: Found in the Image Editor > Sidepanel (N) > Converter tab.
 
 * Recursive Scanning: Automatically scans and converts textures in all subfolders.
 
