@@ -1,12 +1,10 @@
 Batch Texture Converter
-Efficiently batch convert texture formats within Blender with professional-grade controls.
+This is a plugin designed to help you quickly and efficiently batch convert texture formats.
 
-* Recursive Processing: Automatically scan and convert textures in all subfolders.
+* Recursive Scanning: Automatically scans and converts textures in all subfolders.
 
-* Color Space Preservation: Automatically detects and locks the original color space (e.g., Non-Color for Normal maps) to ensure engine compatibility.
+* Smart Alpha Splitting: Optional extraction of the Alpha channel into a separate grayscale map—perfect for JPEG or WebP workflows.
 
-* Smart Alpha Splitting: Optional extraction of Alpha channels into separate grayscale maps—ideal for JPEG or WebP workflows.
+* Non-Blocking Workflow: Uses an asynchronous modal timer to keep the Blender interface responsive with a real-time progress bar.
 
-* Non-Blocking Workflow: Uses an asynchronous modal timer to keep the Blender UI responsive with a real-time progress bar.
-
-* Organized Output: Automatically sorts converted files into subfolders based on their new format.
+* Organized Output: Automatically categorizes converted files into subfolders based on their new format.
