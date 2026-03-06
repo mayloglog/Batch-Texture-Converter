@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 id = "batch_texture_converter"
 name = "Batch Texture Converter"
-version = "1.0.0"
+version = "1.0.2"
 tagline = "Bulk texture conversion with color space and alpha splitting"
 maintainer = "maylog"
 type = "add-on"
