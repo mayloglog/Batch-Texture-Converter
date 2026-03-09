@@ -1,15 +1,15 @@
 schema_version = "1.0.0"
 id = "batch_texture_converter"
 name = "Batch Texture Converter"
-version = "1.0.2"
+version = "1.1.0"
 tagline = "Bulk texture conversion with color space and alpha splitting"
 maintainer = "maylog"
 type = "add-on"
 tags = ["Import-Export"]
-blender_version_min = "4.2.0"
+blender_version_min = "5.0.0"
 license = ["SPDX:GPL-3.0-or-later"]
 website = "https://github.com/mayloglog/Batch-Texture-Converter"
-copyright = ["2026 maylog"]
+copyright = ["2026 maylog", "2026 Nezumi.blend"]
 
 [permissions]
 files = "Read and write local files"
