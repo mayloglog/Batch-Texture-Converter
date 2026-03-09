@@ -10,3 +10,13 @@ This is a plugin designed to help you quickly and efficiently batch convert text
 * Non-Blocking Workflow: Uses an asynchronous modal timer to keep the Blender interface responsive with a real-time progress bar.
 
 * Organized Output: Automatically categorizes converted files into subfolders based on their new format.
+
+* Compositor Batch Processing: Added support for processing images through custom Compositor Node Trees.
+
+  * Workflow: Organize your nodes as 【 Image Input node > Your custom nodes > File Output node 】 . The addon will automatically swap images and trigger the render for each file in the batch.
+
+  * Due to the dependency on independent node structures for the Compositor integration, this add-on requires Blender 5.0 or higher.
+
+__Special Thanks:__
+
+* Special thanks to  @Nezumi.blend  (BlenderArtists) for providing invaluable technical guidance and assistance during the development of the Compositor integration.
