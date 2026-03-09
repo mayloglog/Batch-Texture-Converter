@@ -11,7 +11,7 @@ This is a plugin designed to help you quickly and efficiently batch convert text
 
 * Organized Output: Automatically categorizes converted files into subfolders based on their new format.
 
-* Compositor Batch Processing: Added support for processing images through custom Compositor Node Trees.
+* Compositor Batch Processing: processing images through custom Compositor Node Trees.
 
   * Workflow: Organize your nodes as 【 Image Input node > Your custom nodes > File Output node 】 . The addon will automatically swap images and trigger the render for each file in the batch.
 
