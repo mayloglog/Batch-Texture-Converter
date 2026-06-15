@@ -103,6 +103,8 @@ class TEXTURE_OT_BatchConvert(Operator):
             'WEBP': ".webp",
             'AVIF': ".avif",
             'JP2': ".jp2"
+            'DDS': ".dds"
+            'PSD': ".psd"
         }
         return ext_map.get(s.file_format, ".png")
 
