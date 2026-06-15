@@ -102,9 +102,8 @@ class TEXTURE_OT_BatchConvert(Operator):
             'IRIS': ".rgb",
             'WEBP': ".webp",
             'AVIF': ".avif",
-            'JP2': ".jp2"
-            'DDS': ".dds"
-            'PSD': ".psd"
+            'JP2': ".jp2",
+            'PSD': ".psd",
         }
         return ext_map.get(s.file_format, ".png")
 
@@ -228,7 +227,7 @@ class TEXTURE_OT_BatchConvert(Operator):
         if not os.path.isdir(src):
             return {'CANCELLED'}
 
-        valid = ('.jpg', '.jpeg', '.png', '.tga', '.tif', '.tiff', '.webp', '.bmp', '.exr', '.hdr', '.jp2', '.dds', '.DDS', '.PSD')
+        valid = ('.jpg', '.jpeg', '.png', '.tga', '.tif', '.tiff', '.webp', '.bmp', '.exr', '.hdr', '.jp2', '.dds', '.psd')
         self._files = []
         if p.subfolders:
             for r, d, fs in os.walk(src):
