@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Batch Texture Converter",
     "author": "Maylog",
-    "version": (1, 1, 1),
+    "version": (1, 1, 2),
     "blender": (5, 0, 0),
     "location": "Image Editor > Sidepanel > Converter",
     "description": "Bulk convert image formats with recursive subfolder support and Alpha splitting",
@@ -12,6 +12,8 @@ import bpy
 import os
 from bpy.types import Operator, Panel, PropertyGroup
 from bpy.props import StringProperty, BoolProperty, IntProperty, EnumProperty, PointerProperty
+from .translations import translations_dict
+from bpy.app.translations import pgettext_iface
 
 def get_compositor_nodetrees(self, context):
     items = []
@@ -269,7 +271,7 @@ class TEXTURE_PT_B(Panel):
         c = layout.column()
         c.scale_y = 2.0
         c.active = not is_video
-        c.operator("image.b_convert", icon='PLAY', text="Run Batch Conversion")
+        c.operator("image.b_convert", icon='PLAY', text=pgettext_iface("Run Batch Conversion"))
         if is_video:
             col = layout.column()
             col.alert = True
@@ -354,12 +356,14 @@ classes = (
 
 
 def register():
+    bpy.app.translations.register(__name__, translations_dict)
     for cls in classes:
         bpy.utils.register_class(cls)
     bpy.types.Scene.b_props = PointerProperty(type=BSettings)
 
 
 def unregister():
+    bpy.app.translations.unregister(__name__)
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
     del bpy.types.Scene.b_props
