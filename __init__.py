@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Batch Texture Converter",
     "author": "Maylog",
-    "version": (1, 1, 2),
+    "version": (1, 1, 3),
     "blender": (5, 0, 0),
     "location": "Image Editor > Sidepanel > Converter",
     "description": "Bulk convert image formats with recursive subfolder support and Alpha splitting",
@@ -229,7 +229,7 @@ class TEXTURE_OT_BatchConvert(Operator):
         if not os.path.isdir(src):
             return {'CANCELLED'}
 
-        valid = ('.jpg', '.jpeg', '.png', '.tga', '.tif', '.tiff', '.webp', '.bmp', '.exr', '.hdr', '.jp2', '.dds', '.psd')
+        valid = ('.jpg', '.jpeg', '.png', '.tga', '.tif', '.tiff', '.webp', '.bmp', '.exr', '.hdr', '.jp2', '.dds', '.psd', '.avif')
         self._files = []
         if p.subfolders:
             for r, d, fs in os.walk(src):
